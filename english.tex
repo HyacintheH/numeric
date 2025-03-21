@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm}
+
+\title{A Conjecture on Symmetric Additions in Bases of the Form $n^2 + 1$}
+\author{Hyacinthe Herv\'e}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a conjecture on an intriguing property of numeral systems with bases of the form $b = n^2 + 1$. We show that by arranging the digits from $1$ to $n^2$ in an $n \times n$ square resembling a numeric keypad, the sums of symmetric pairs always yield the same result: a number composed of $n$ occurrences of the digit $1$ followed by a $0$ in the given base. We propose an explanation for this phenomenon and suggest avenues for a rigorous proof.
+\end{abstract}
+
+\section{Introduction}
+
+Numeral systems have long fascinated mathematicians due to their unique arithmetic and algebraic properties. While manipulating numbers in different bases, we discovered a surprising regularity in specific bases of the form $b = n^2 + 1$.
+
+\section{Definition and Empirical Observation}
+
+Consider a base $b = n^2 + 1$. We construct an $n \times n$ grid containing the digits from $1$ to $n^2$, arranged as follows:
+
+We then observe that the sums of symmetric number pairs relative to the center always yield a number of the form:
+
+The results for some specific bases are:
+
+Base $5$ ($n=2$): $110_5$
+
+Base $10$ ($n=3$): $1110_{10}$
+
+Base $17$ ($n=4$): $11110_{17}$
+
+Base $26$ ($n=5$): $111110_{26}$
+
+\section{Formulation of the Conjecture}
+
+\textbf{Conjecture:} Let $b = n^2 + 1$ be a numeral base. If we arrange the digits from $1$ to $n^2$ in an $n \times n$ grid, imitating a numeric keypad layout, then:
+
+this implies that the total sum always yields a number of the form $111\dots10_b$.
+
+\section{Justification and Proof Approaches}
+
+The numbers are organized in a symmetric grid where each element $x$ has an opposite element $y$ such that their sum equals $b - 1$.
+
+Due to the square structure, there are always $n^2/2$ pairs of symmetric numbers.
+
+Since $b - 1$ is the largest number that can be represented with $n$ digits of $1$ in base $b$, the sum follows directly.
+
+A rigorous proof could be developed by generalizing these observations to all bases of the form $n^2 + 1$, using combinatorial and arithmetic arguments.
+
+\section{Conclusion and Perspectives}
+
+We have highlighted an intriguing numerical regularity in certain bases and formulated a conjecture that appears to hold empirically. We hope this observation will be further explored by the mathematical community.
+
+\end{document}
