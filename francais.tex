@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsthm}
+
+\title{Une conjecture sur les additions symétriques dans les bases de la forme $n^2 + 1$}
+\author{Hyacinthe Hervé}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Nous présentons une conjecture sur une propriété intéressante des bases de numération de la forme $b = n^2 + 1$. Nous montrons qu'en disposant les chiffres de $1$ à $n^2$ sous forme d'un carré $n \times n$ imitant un pavé numérique, les sommes des paires symétriques aboutissent toujours au même résultat : un nombre composé de $n$ fois le chiffre $1$ suivi d'un $0$ dans la base considérée. Nous proposons une explication de ce phénomène et suggérons des pistes pour une démonstration rigoureuse.
+\end{abstract}
+
+\section{Introduction}
+
+Les bases de numération ont toujours fasciné les mathématiciens, en raison de leurs propriétés arithmétiques et algébriques uniques. En manipulant des nombres dans différentes bases, nous avons découvert une régularité surprenante dans certaines bases particulières, celles de la forme $b = n^2 + 1$.
+
+\section{Définition et Observation Empirique}
+
+Considérons une base $b = n^2 + 1$. Nous construisons une grille de taille $n \times n$ contenant les chiffres de $1$ à $n^2$, disposés comme suit :
+
+
+
+Nous observons alors que les paires de nombres symétriques par rapport au centre s’additionnent toujours pour donner un nombre sous la forme :
+
+
+
+Les résultats sont les suivants pour quelques bases particulières :
+
+Base $5$ ($n=2$) : $110_5$
+
+Base $10$ ($n=3$) : $1110_{10}$
+
+Base $17$ ($n=4$) : $11110_{17}$
+
+Base $26$ ($n=5$) : $111110_{26}$
+
+\section{Formulation de la Conjecture}
+
+\textbf{Conjecture :} Soit une base de la forme $b = n^2 + 1$. Si nous disposons les chiffres de $1$ à $n^2$ sous forme de grille $n \times n$ en imitant la disposition d'un pavé numérique, alors :
+
+
+
+cela implique que la somme totale donne toujours un nombre sous la forme $111\ldots10_b$.
+
+\section{Justification et Pistes de Démonstration}
+
+Les nombres sont organisés en une grille symétrique, où chaque élément $x$ a un élément opposé $y$ tel que leur somme donne $b - 1$.
+
+En raison de la structure carrée, il y a toujours $n^2/2$ paires de nombres symétriques.
+
+Puisque $b - 1$ est le plus grand nombre possible représentable avec $n$ chiffres de $1$ en base $b$, la somme suit directement.
+
+Une démonstration rigoureuse pourrait être menée en généralisant ces observations à toute base de la forme $n^2 + 1$, en utilisant des arguments combinatoires et arithmétiques.
+
+\section{Conclusion et Perspectives}
+
+Nous avons mis en évidence une régularité numérique intrigante dans certaines bases et formulé une conjecture qui semble se vérifier empiriquement. Nous espérons que cette observation pourra être explorée plus en profondeur par la communauté mathématique.
+
+\end{document}
